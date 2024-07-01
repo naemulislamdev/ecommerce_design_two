@@ -77,6 +77,10 @@ a:hover{text-decoration: none;}
   font-weight: 800;
   font-family: var(--ef);
 }
+.header-logo {
+  width: 350px;
+  border-radius: 27px;
+}
 header {
   position: fixed;
   width: 100%;
@@ -375,27 +379,26 @@ header.scrolled .header-icon > a > .fa {
 .header-slider-section{
   margin-top: -61px;
 }
-.swiper-slide{
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  height: 750px;
+.carousel-indicators {
+  bottom: 0px;
+}
+.main-slider > img{
+  position: relative;
 }
 
-.swiper-slide .slider-content-box {
+.slider-content-box {
   top: 38%;
   left: 10%;
   position: absolute;
   width: 30%;
 }
-.swiper-slide .slider-content-box > h5 {
+.slider-content-box > h5 {
   color: var(--text-white);
   font-size: 25px;
   font-family: var(--Charm);
   margin-bottom: 0px;
 }
-.swiper-slide .slider-content-box > h3 {
+.slider-content-box > h3 {
   color: var(--text-white);
   font-size: 77px;
   font-family: var(--jost);
@@ -413,26 +416,6 @@ header.scrolled .header-icon > a > .fa {
 }
 .swiper-button-next, .swiper-button-prev {
   color: #e4e4e4;
-}
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-  height: 550px;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  background: var(--bg-color);
-}
-
-.mini-slider-text {
-  background: var(--bg-color);
-  padding: 7px 0px;
-}
-.miniSlider-text-box > h3 {
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
 }
 
 /*--------------------- Category section style-----------------------*/
@@ -460,6 +443,11 @@ header.scrolled .header-icon > a > .fa {
   border-radius: 4px;
   color: #000;
   font-family: var(--jost);
+  transition: 0.3s;
+}
+.category-title-box > .tp-right-btn > a:hover {
+  background-color:#ff9100;
+  color: #fff;
 }
 .category-title-box > .tp-right-btn > a>.fa {
   font-size: 12px;
@@ -771,6 +759,11 @@ input[type="range"]::-ms-thumb {
 /*--------------------- Start footer section-----------------------*/
 footer{
   background-color: #f6f6f8;
+}
+.footer-logo {
+  width: 230px;
+  border-radius: 27px;
+  margin-bottom: 10px;
 }
 .footer-title{}
 .footer-title > h3 {

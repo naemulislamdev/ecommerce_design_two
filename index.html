@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <!-- <link rel="stylesheet" href="{{ asset('defaults/toastr/toastr.min.css') }}"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap_v4.min.css">
     <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
@@ -34,7 +33,12 @@
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-2"><a class="navbar-brand" href="index.html">Shopping Zone BD</a></div>
+                <div class="col-md-2">
+                    <!-- <a class="navbar-brand" href="index.html">Shopping Zone BD</a> -->
+                    <a href="index.html">
+                        <img class="header-logo" src="assets/images/logo/main-logo.png" alt="">
+                    </a>
+                </div>
                 <div class="col-md-8">
                     <nav class="navbar">
                    
@@ -88,7 +92,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </header>
     <!--end header-->
@@ -96,7 +99,7 @@
     <div class="mobile-menu">
         <div class="mm-logo" style="background: #fff; padding: 11px 18px;">
             <a href="index.html">
-                <img style="width: 55px;" src="" alt="logo">
+                <img style="width:220px;" src="assets/images/logo/main-logo.png" alt="">
             </a>
             <div class="mm-cross-icon">
                 <i class="fa fa-times mm-ci"></i>
@@ -110,23 +113,27 @@
                     </div>
                 </div>
                 <div class="menu-box">
-                    <div class="menu-link" id="headingFour">
-                        <a href="#" class="mmenu-btn" type="button" data-toggle="collapse"
-                            data-target="#collapseFour"> New In</a>
+                    <div class="menu-link">
+                        <a href="#"><i class="fa fa-ptab3 mr-2"></i> Category</a>
                     </div>
-    
                 </div>
+                <div class="menu-box">
+                    <div class="menu-link">
+                        <a href="#"><i class="fa fa-ptab3 mr-2"></i> Shop</a>
+                    </div>
+                </div>
+               
                 <div class="menu-box">
                     <div class="menu-link" id="headingFive">
                         <a class="mmenu-btn" type="button" data-toggle="collapse"
-                            data-target="#collapseFive">Gallery<i class="fa fa-plus"></i></a>
+                            data-target="#collapseFive">Vendor<i class="fa fa-plus"></i></a>
                     </div>
                     <div id="collapseFive" class="collapse menu-body" aria-labelledby="headingFive"
                         data-parent="#accordionExample">
                         <div class="card-body">
                             <ul>
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Gallery</a></li>
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Video </a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Login</a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Register </a></li>
                             </ul>
                         </div>
                     </div>
@@ -198,10 +205,17 @@
     <!------End shopping cart canva-->
     <!------start  header main slider-->
     <section class="header-slider-section">
-        <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image: url('assets/images/slider/swep-slider-1.jpg');">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="main-slider">
+            <img class="d-block w-100" src="assets/images/slider/swep-slider-1.jpg" alt="First slide">
+        </div>
         <div class="slider-content-box wow animate__animated animate__fadeInUp">
             <h5> New Arrivals 2023 </h5>
             <h3>The Clothing Collection</h3>
@@ -210,7 +224,10 @@
             </div>
         </div>
       </div>
-      <div class="swiper-slide" style="background-image: url('assets/images/slider/swep-slider-2.jpg');">
+      <div class="carousel-item">
+        <div class="main-slider">
+            <img class="d-block w-100" src="assets/images/slider/swep-slider-2.jpg" alt="Second slide">
+        </div>
         <div class="slider-content-box wow animate__animated animate__fadeInUp">
             <h5> New Arrivals 2023 </h5>
             <h3>The Clothing Collection</h3>
@@ -219,7 +236,10 @@
             </div>
         </div>
       </div>
-      <div class="swiper-slide" style="background-image: url('assets/images/slider/swep-slider-3.jpg');">
+      <div class="carousel-item">
+        <div class="main-slider">
+            <img class="d-block w-100" src="assets/images/slider/swep-slider-3.jpg" alt="Third slide">
+        </div>
         <div class="slider-content-box wow animate__animated animate__fadeInUp">
             <h5> New Arrivals 2023 </h5>
             <h3>The Clothing Collection</h3>
@@ -229,9 +249,14 @@
         </div>
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
     </section>
     <!------start  header mini slider-->
@@ -294,6 +319,17 @@
                                 <div class="tp-category-content-3">
                                 <h3 class="tp-category-title-3">
                                     <a href="#">Women's Clothing</a>
+                                </h3>
+                                <span class="tp-categroy-ammount-3">8 products</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tp-category-item-3 p-relative grey-bg text-center z-index-1 fix mb-30">
+                                <div class="tp-category-thumb-3 include-bg" style="background-image: url('assets/images/category/cate-img2.jpg');"></div>
+                                <div class="tp-category-content-3">
+                                <h3 class="tp-category-title-3">
+                                    <a href="#">Running Shoes</a>
                                 </h3>
                                 <span class="tp-categroy-ammount-3">8 products</span>
                                 </div>
@@ -948,6 +984,7 @@
                 <div class="col-md-3">
                     <div class="footer-title">
                         <h3>Shopping Zone BD Outfitters</h3>
+                        <img class="footer-logo" src="assets/images/logo/main-logo.png" alt="">
                         <ul>
                             <li><i class="fa fa-map-marker"></i><a href="#">Address: demo office, 1212 Dhaka</a></li>
                             <li><i class="fa fa-envelope"></i><a href="#">Email: example@gmail.com</a></li>
