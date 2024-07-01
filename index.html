@@ -1,0 +1,1135 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Evercom</title>
+    <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Owl-carosul css cdn link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- <link rel="stylesheet" href="{{ asset('defaults/toastr/toastr.min.css') }}"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap_v4.min.css">
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/bs_customize.css">
+    <link rel="stylesheet" href="assets/css/custome.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+</style>
+
+</head>
+
+<body>
+ 
+    <!-- Start Header & Navigation Section -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"><a class="navbar-brand" href="index.html">Shopping Zone BD</a></div>
+                <div class="col-md-8">
+                    <nav class="navbar">
+                   
+                        <div class="menu-area">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="category.html">Category</a></li>
+                                <li class="dd-btn1"><a href="#!">Shop</i></a>
+                                    <div class="dropdown-menu1">
+                                        <ul>
+                                            <li><a href=""></i> View all</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dd-btn1"><a href="#!">Vendors</i></a>
+                                    <div class="dropdown-menu1">
+                                        <ul>
+                                            <li><a href=""></i> View all</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dd-btn1"><a href="#!">Pages</i></a>
+                                    <div class="dropdown-menu1">
+                                        <ul>
+                                            <li><a href=""></i> View all</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dd-btn1"><a href="#!">Blog</i></a>
+                                    <div class="dropdown-menu1">
+                                        <ul>
+                                            <li><a href=""></i> View all</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#!">Contact</i></a></li>
+                            </ul>
+                        </div>
+              
+                <i class="fa fa-bars menu-icon"></i>
+            </nav>
+                </div>
+                <div class="col-md-2">
+                    <div class="header-icon">
+                        <a data-bs-toggle="offcanvas" href="#searchOffcanvas" role="button" aria-controls="searchOffcanvas"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+
+                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i><span class="badge badge-danger">0</span></a>
+
+                        <a data-bs-toggle="offcanvas" href="#shoppingCartOffcanvas" role="button" aria-controls="shoppingCartOffcanvas"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-danger">0</span></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <!--end header-->
+    <!--start mobile menu-->
+    <div class="mobile-menu">
+        <div class="mm-logo" style="background: #fff; padding: 11px 18px;">
+            <a href="index.html">
+                <img style="width: 55px;" src="" alt="logo">
+            </a>
+            <div class="mm-cross-icon">
+                <i class="fa fa-times mm-ci"></i>
+            </div>
+        </div>
+        <div class="mm-menu">
+            <div class="accordion" id="accordionExample">
+                <div class="menu-box">
+                    <div class="menu-link">
+                        <a href="index.html"><i class="fa fa-ptab3 mr-2"></i> Home</a>
+                    </div>
+                </div>
+                <div class="menu-box">
+                    <div class="menu-link" id="headingFour">
+                        <a href="#" class="mmenu-btn" type="button" data-toggle="collapse"
+                            data-target="#collapseFour"> New In</a>
+                    </div>
+    
+                </div>
+                <div class="menu-box">
+                    <div class="menu-link" id="headingFive">
+                        <a class="mmenu-btn" type="button" data-toggle="collapse"
+                            data-target="#collapseFive">Gallery<i class="fa fa-plus"></i></a>
+                    </div>
+                    <div id="collapseFive" class="collapse menu-body" aria-labelledby="headingFive"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Gallery</a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Video </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end mobile menu-->
+    <!------Search canva-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="searchOffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">SEARCH OUR SITE</h5>
+          <i class="fa fa-close offcanvasClose" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        <label>Select Category</label>
+                        <select class="form-control" name="category">
+                            <option>Select</option>
+                            <option>Category 1</option>
+                            <option>Category 1</option>
+                            <option>Category 1</option>
+                            <option>Category 1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search your product" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </div>
+                          </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="offcanva-search-title">
+                        <h4>Search Results:</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!------End Search canva-->
+    <!------shopping cart canva-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingCartOffcanvas" aria-labelledby="offcanvaShoppingCard">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvaShoppingCard">SHOPPING CART</h5>
+          <i class="fa fa-close offcanvasClose" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col">
+                    <div class="offcanva-search-title">
+                        <div class="empty-cart-box">
+                            <i class="fa fa-shopping-bag"></i>
+                            <h4>Your cart is empty.</h4>
+                            <a href="#" class="btn btn-dark">Return to shop</a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!------End shopping cart canva-->
+    <!------start  header main slider-->
+    <section class="header-slider-section">
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('assets/images/slider/swep-slider-1.jpg');">
+        <div class="slider-content-box wow animate__animated animate__fadeInUp">
+            <h5> New Arrivals 2023 </h5>
+            <h3>The Clothing Collection</h3>
+            <div class="slider-inner-btn">
+                <a href="#">Shop Collection</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('assets/images/slider/swep-slider-2.jpg');">
+        <div class="slider-content-box wow animate__animated animate__fadeInUp">
+            <h5> New Arrivals 2023 </h5>
+            <h3>The Clothing Collection</h3>
+            <div class="slider-inner-btn">
+                <a href="#">Shop Collection</a>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('assets/images/slider/swep-slider-3.jpg');">
+        <div class="slider-content-box wow animate__animated animate__fadeInUp">
+            <h5> New Arrivals 2023 </h5>
+            <h3>The Clothing Collection</h3>
+            <div class="slider-inner-btn">
+                <a href="#">Shop Collection</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+    </section>
+    <!------start  header mini slider-->
+    <!------start Category section-->
+
+    <section class="category-section my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-11 mx-auto">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="category-title-box">
+                                <div class="category-title">
+                                    <h5>Product Collection</h5>
+                                    <h1>Discover our products</h1>
+                                </div>
+                                <div class="tp-right-btn">
+                                    <a href="#">Shop all products <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories owl-carousel owl-carousel-theme">
+                        <div class="item">
+                            <div class="tp-category-item-3 p-relative grey-bg text-center z-index-1 fix mb-30">
+                                <div class="tp-category-thumb-3 include-bg" style="background-image: url('assets/images/category/cate-img1.jpg');"></div>
+                                <div class="tp-category-content-3">
+                                <h3 class="tp-category-title-3">
+                                    <a href="#">Clothing</a>
+                                </h3>
+                                <span class="tp-categroy-ammount-3">8 products</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tp-category-item-3 p-relative grey-bg text-center z-index-1 fix mb-30">
+                                <div class="tp-category-thumb-3 include-bg" style="background-image: url('assets/images/category/cate-img2.jpg');"></div>
+                                <div class="tp-category-content-3">
+                                <h3 class="tp-category-title-3">
+                                    <a href="#">Clothing</a>
+                                </h3>
+                                <span class="tp-categroy-ammount-3">8 products</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tp-category-item-3 p-relative grey-bg text-center z-index-1 fix mb-30">
+                                <div class="tp-category-thumb-3 include-bg" style="background-image: url('assets/images/category/cate-img3.jpg');"></div>
+                                <div class="tp-category-content-3">
+                                <h3 class="tp-category-title-3">
+                                    <a href="#">Clothing</a>
+                                </h3>
+                                <span class="tp-categroy-ammount-3">8 products</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tp-category-item-3 p-relative grey-bg text-center z-index-1 fix mb-30">
+                                <div class="tp-category-thumb-3 include-bg" style="background-image: url('assets/images/category/cate-img4.jpg');"></div>
+                                <div class="tp-category-content-3">
+                                <h3 class="tp-category-title-3">
+                                    <a href="#">Clothing</a>
+                                </h3>
+                                <span class="tp-categroy-ammount-3">8 products</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------Start Product section----->
+    <section class="py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between mb-3">
+                <div class="filter-box">
+                    <a data-bs-toggle="offcanvas" href="#productFilter" role="button" aria-controls="productFilter"><i class="fa fa-filter"></i> Filter</a>
+                      <!------shopping cart canva-->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="productFilter" aria-labelledby="offcanvaProductFilterCard">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvaProductFilterCard">FILTER</h5>
+                        <i class="fa fa-close offcanvasClose" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="filter-container">
+                                        <label for="min-price">Price Range:</label>
+                                        <div class="slider-container">
+                                            <input type="range" id="min-price" min="0" max="1000" value="100" oninput="updateRange()">
+                                            <input type="range" id="max-price" min="0" max="1000" value="900" oninput="updateRange()">
+                                        </div>
+                                        <div class="price-values">
+                                            <span id="min-price-value">$100</span> - <span id="max-price-value">$900</span>
+                                        </div>
+                                        <button type="button" onclick="filterPrices()">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <!------End shopping cart canva-->
+                </div>
+                
+                <div class="select-box">
+                    <select class="form-control" name="filter">
+                        <option>Date, new to old</option>
+                        <option>Date, new to old</option>
+                        <option>Date, new to old</option>
+                        <option>Date, new to old</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col text-center">
+                    <div class="section-heading-title">
+                        <h3>Our Latest Product</h3>
+                        <div class="heading-border"></div>
+                    </div>
+                    <div class="grid-controls d-flex">
+                        <button class="grid-btn" data-columns="6" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="4" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="3" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="2" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row product-grid">
+                <!-- Your product columns go here -->
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col text-center">
+                    <div class="section-heading-title">
+                        <h3>Hot Sales</h3>
+                        <div class="heading-border"></div>
+                    </div>
+                    <div class="grid-controls d-flex">
+                        <button class="grid-btn" data-columns="6" data-category="category2">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="4" data-category="category2">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="3" data-category="category2">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="2" data-category="category2">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row product-grid">
+                <!-- Your product columns go here -->
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category2">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col text-center">
+                    <div class="section-heading-title">
+                        <h3>Accessory</h3>
+                        <div class="heading-border"></div>
+                    </div>
+                    <div class="grid-controls d-flex">
+                        <button class="grid-btn" data-columns="6" data-category="category3">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="4" data-category="category3">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="3" data-category="category3">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="2" data-category="category3">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row product-grid">
+                <!-- Your product columns go here -->
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category3">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Add to cart</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                            <span class="price">TK: 599.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Newslater Section -->
+     <section class="newslater-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="newslater-text">
+                                <h4>SALE 20% OFF ALL STORE</h4>
+                                <h2>Subscribe our Newsletter</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="newslater-input">
+                                    <div class="input-group mb-3 w-100">
+                                        <input type="text" class="form-control" placeholder="Enter email">
+                                        <div class="input-group-append">
+                                          <button type="submit" class="btn btn-dark" id="basic-addon2">Subscribe</button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Start  Footer Section -->
+     <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Shopping Zone BD Outfitters</h3>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i><a href="#">Address: demo office, 1212 Dhaka</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="#">Email: example@gmail.com</a></li>
+                            <li><i class="fa fa-phone"></i><a href="#">Phone:01587658765</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">News feed</a></li>
+                            <li><a href="#">Manifesto</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Policies</h3>
+                        <ul>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">News feed</a></li>
+                            <li><a href="#">Manifesto</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Policies</h3>
+                        <ul>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">News feed</a></li>
+                            <li><a href="#">Manifesto</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- Start  Copyright Section -->
+    <section class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text text-center">
+                        <p>Copyright © 2024 - All Rights Reserved. Developed by <a
+                            target="_blank" href="#">Evertech IT</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Copyright Section -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap_v4.min.js"></script>
+    <script src="assets/js/bs_v5.js"></script>
+    <!-- Owl-carosul js file cdn link -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/owl-extra-code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            /*mobile menu*/
+            $('.menu-icon').on('click', function() {
+                $('.mobile-menu').toggleClass('mobile-menu-active');
+            });
+            $('.mm-ci').on('click', function() {
+                $('.mobile-menu').toggleClass('mobile-menu-active');
+            });
+
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function() {
+                $(this).prev(".menu-link").find(".fa-minus").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function() {
+                $(this).prev(".menu-link").find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function() {
+                $(this).prev(".menu-link").find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
+            });
+            /*mobile-menu-click*/
+            $('.mmenu-btn').click(function() {
+                $(this).toggleClass("menu-link-active");
+
+            });
+        });
+    </script>
+      <script>
+        function updateRange() {
+            const minPrice = document.getElementById('min-price');
+            const maxPrice = document.getElementById('max-price');
+            const minPriceValue = Math.min(parseInt(minPrice.value), parseInt(maxPrice.value) - 1);
+            const maxPriceValue = Math.max(parseInt(maxPrice.value), parseInt(minPrice.value) + 1);
+
+            minPrice.value = minPriceValue;
+            maxPrice.value = maxPriceValue;
+
+            document.getElementById('min-price-value').textContent = `$${minPriceValue}`;
+            document.getElementById('max-price-value').textContent = `$${maxPriceValue}`;
+        }
+
+        function filterPrices() {
+            const minPrice = document.getElementById('min-price').value;
+            const maxPrice = document.getElementById('max-price').value;
+            alert(`Filtering items with a price between $${minPrice} and $${maxPrice}`);
+            // Implement your filtering logic here
+        }
+
+        document.addEventListener('DOMContentLoaded', updateRange);
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+    //        autoplay: {
+    //      delay: 3000,
+    //      disableOnInteraction: false,
+    //   },
+          spaceBetween: 30,
+          keyboard: {
+            enabled: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <script>
+        new WOW().init();
+        </script>
+        <script>
+            //Grid view system on product
+            $(document).ready(function() {
+                $('.grid-btn').on('click', function() {
+                    var columns = $(this).data('columns');
+                    var category = $(this).data('category');
+                    // console.log(columns);
+                    $('.product-column[data-category="' + category + '"]')
+                        .removeClass('col-md-2 col-md-3 col-md-4 col-md-5 col-md-6')
+                        .addClass('col-md-' + columns);
+
+                    $('.grid-btn[data-category="' + category + '"]').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+        <script>
+            //When scroll on window
+            window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+        </script>
+        
+</body>
+
+</html>
