@@ -62,6 +62,14 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 570px){
+    .grid-controls{display: none;}
+    .mobile-grid-controls{
+        display: block; 
+        display: flex;
+        width: 20%;
+    }
+}
 
 @media (max-width: 480px) {
     .header-icon {
@@ -97,10 +105,8 @@
     .tp-category-item-3 {
         min-height: 270px;
     }
-    .grid-controls {
-        width: 82%;
-        margin: 0 auto;
-    }
+    .grid-controls{display: none;}
+    .mobile-grid-controls{display: block; display: flex;}
     .grid-btn {
         padding: 3px 2px;
     }
@@ -122,8 +128,9 @@
         margin-top: -26px;
         display: flex;
     }
-    .grid-controls {
-        width: 100%;
-        margin: 0 auto;
+    .mobile-grid-controls{
+        display: block; 
+        display: flex;
+        width: 20%;
     }
 }

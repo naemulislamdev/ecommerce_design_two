@@ -23,11 +23,11 @@
     rgba(255, 194, 37, 0.9)
   );
   --gradient-single: rgba(255, 134, 23, 0.9);
-  --primary-color: #6b6b6b;
   --bg-color:#cf3341;
   --text-danger:#cf3341;
   --text-white:#fff;
   --text-black:#232323;
+  --primary-color:#f26d21;
   --radius: 13px;
   --lato: "Lato", sans-serif;
   --Charm: "Charm", cursive;
@@ -353,7 +353,7 @@ header.scrolled .header-icon > a > .fa {
 .offcanvasClose {
   cursor: pointer;
   font-size: 20px;
-  color: var(--text-white);
+  color: var(--primary-color);
   transition: 0.3s;
 }
 .offcanvasClose:hover {
@@ -553,8 +553,21 @@ header.scrolled .header-icon > a > .fa {
 }
 /*--------------------- End find product main search section-----------------------*/
 /*--------------------- Product Grid controls system-----------------------*/
-
+.col-sm-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-sm-6{
+  width: 50% !important;
+}
+.col-sm-12{
+  width: 100% !important;
+}
  .grid-controls{
+  display: flex;
   width: 20%;
   margin: 0 auto;
  }
@@ -587,8 +600,11 @@ header.scrolled .header-icon > a > .fa {
 .grid-btn.grid-icon.active{
   background-color: #0d0d0d;
 }
-
+.mobile-grid-controls{display: none;}
 /*--------------------- Start Start Product section-----------------------*/
+.big-banner > img{
+  width: 100%;
+}
 .heading-title{}
 .heading-title > h3 {
   text-align: center;
@@ -601,7 +617,11 @@ header.scrolled .header-icon > a > .fa {
   background: #fff;
   padding: 0px 15px;
 }
-.section-heading-title{}
+.section-heading-title > h5 {
+  font-size: 16px;
+  font-family: var(--jost);
+  color: #ff9100;
+}
 .section-heading-title > h3{
   font-size: 25px;
   font-family: var(--jost);
@@ -619,7 +639,6 @@ header.scrolled .header-icon > a > .fa {
   color: #817e7b;
 }
 .filter-box > a:hover{text-decoration: none;color: var(--text-danger);}
-
 
 .product-box{font-family:'Open Sans',sans-serif;position:relative}
 .product-box .product-image2{overflow:hidden;position:relative}
@@ -650,15 +669,6 @@ header.scrolled .header-icon > a > .fa {
 .product-box .title a:hover{color:var(--text-danger);text-decoration: none;}
 .product-box .price{color:#303030;font-size:15px}
 @media screen and (max-width:990px){.product-box{margin-bottom:30px}
-}
-/*-------------Product tab customize css----------------*/
-.nav-tabs {
-  border-bottom: 0px solid #f70035;
-}
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: #495057;
-  background-color: var(--bg-color);
-  border-color: #dee2e6 #dee2e6 #fff;
 }
 /*--------------------- Product filter section -----------------------*/
 .filter-container {
@@ -729,6 +739,43 @@ input[type="range"]::-ms-thumb {
   color: #333;
 }
 
+/*--------------------- Start customer review Section-----------------------*/
+.customer-review-box {
+  background-color: #eeeeee;
+  padding: 25px 50px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 3px solid #f26d21;
+}
+.customer-review-box > img {
+  width: 50px !important;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 3px solid #fff;
+}
+.customer-review-box > .customer-name > h3 {
+  font-size: 18px;
+  font-family: var(--jost);
+  margin: 0px;
+}
+.customer-review-box > .customer-name > span {
+  font-size: 15px;
+  font-family: var(--jost);
+  text-transform: uppercase;
+}
+.customer-review-box > .customer-sms > p {
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: var(--jost);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.customer-review-box > .customer-review > i {
+  color: #f26d21;
+  font-size: 18px;
+}
 /*--------------------- Start Newslater Section-----------------------*/
 .newslater-section {
   background-image: url('../images/bg-img/newslater-banner.png');
@@ -841,8 +888,9 @@ footer{
   border: 2px solid var(--bg-color);
 }
 .product-name {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 22px;
+  font-family: var(--jost);
+  margin-bottom: 0;
 }
 
 .product-price {
@@ -852,7 +900,8 @@ footer{
 }
 
 .product-description {
-  margin-bottom: 1.5rem;
+  margin-bottom: 5px;
+  font-family: var(--jost);
 }
 
 .color-selection .color-box {
