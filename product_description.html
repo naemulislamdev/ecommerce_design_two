@@ -22,6 +22,37 @@
     <link rel="stylesheet" href="assets/css/custome.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 <style>
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff; /* Customize as needed */
+    border: none;
+    padding: 10px; /* Customize as needed */
+    cursor: pointer;
+    z-index: 1000; /* Ensure buttons are above other content */
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -30px;
+    background: #f26d21;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -30px;
+    background: #f26d21;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
     .card-header {
     padding: 6px 0px;
     margin-bottom: 0;
@@ -69,13 +100,30 @@ header {
   text-decoration: none;
   color: #343a40;
 }
+.menu-icon {
+    color: #504f4f;
+}
+.header-icon > a > .fa {
+    color: #464545;
+}
+.js-image-zoom__zoomed-image{
+    z-index: 9999;
+}
+.js-image-zoom__zoomed-area{
+    width: 80.244px !important;
+    height: 80.3375px !important;
+}
+.main-image > img{
+    width: 100% !important;
+    height: 500px !important;
+}
 </style>
 
 </head>
 <body>
  
     <!-- Start Header & Navigation Section -->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
@@ -90,7 +138,7 @@ header {
                         <div class="menu-area">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="category.html">Category</a></li>
+                                <li><a href="#">Category</a></li>
                                 <li class="dd-btn1"><a href="#!">Shop</i></a>
                                     <div class="dropdown-menu1">
                                         <ul>
@@ -251,21 +299,58 @@ header {
 <section class="" style="margin-top: 88px;">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-               <div class="d-flex float-right">
-                <div class="thumbnail-images">
-                    <img src="assets/images/product-img/img1.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/img1.jpg')" alt="Thumbnail 1">
-                    <img src="assets/images/product-img/img2.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/img2.jpg')" alt="Thumbnail 2">
-                    <img src="assets/images/product-img/img3.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/img3.jpg')" alt="Thumbnail 3">
+            <div class="col-md-3 mb-3">
+               <div class="p-image">
+                <div class="row mb-2">
+                    <div class="col-md-12 mx-auto">
+                        <div class="main-image mb-3" id="img-zoom">
+                            <img id="main-image" src="assets/images/product-img/img1.jpg" class="img-fluid" alt="Product Image">
+                        </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="p-details-sub-img owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="thumbnail-images">
+                                    <img src="assets/images/product-img/1.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/1.jpg')" alt="Thumbnail 1">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail-images">
+                                    <img src="assets/images/product-img/img2.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/img2.jpg')" alt="Thumbnail 2">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail-images">
+                                    <img src="assets/images/product-img/img3.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/img3.jpg')" alt="Thumbnail 3">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail-images">
+                                    <img src="assets/images/product-img/3.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/3.jpg')" alt="Thumbnail 3">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail-images">
+                                    <img src="assets/images/product-img/4.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/4.jpg')" alt="Thumbnail 3">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail-images">
+                                    <img src="assets/images/product-img/5.jpg" class="img-thumbnail" onclick="changeImage('assets/images/product-img/5.jpg')" alt="Thumbnail 3">
+                                </div>
+                            </div>
+                        </div>
                 </div>
-                <div class="main-image mb-3">
-                    <img id="main-image" src="assets/images/product-img/img1.jpg" class="img-fluid" alt="Product Image">
-                </div>
-                
+                   </div>
                </div>
             </div>
-            <div class="col-md-6">
-                <h1 class="product-name">Product Name</h1>
+            <div class="col-md-9 mb-3">
+                <div class="row">
+                    <div class="col-md-7 mb-3">
+                        <div class="p-details">
+                            <h1 class="product-name">Product Name</h1>
                 <p class="product-price">$99.99</p>
                 <p class="product-description">This is a great product that you will love. It has many amazing features and benefits that make it a must-have item.</p>
 
@@ -288,7 +373,7 @@ header {
                 </div>
 
                 <div class="row mb-3">
-                    <div class="col-md-3 mb-2">
+                    <div class="col-md-5 mb-2">
                         <div class="input-group mt-1">
                             <div class="input-group-prepend">
                                 <button class="btn btn-outline-secondary" type="button" onclick="decrementValue()">-</button>
@@ -299,16 +384,23 @@ header {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <button class="btn btn-dark btn-lg btn-block mb-3" onclick="addToCart()">Add to Cart</button>
+                    <div class="col-md-7">
+                        <div class="d-flex justify-content-center align-content-center mt-2">
+                            <span class="instock">Instock: 5</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="action-buttons mb-3">
-                    <button class="btn btn-danger btn-lg btn-block col-md-7" onclick="buyNow()">Buy Now</button>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3">
+                        <a href="#" class="w-100 common-btn">Order Now</a>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-dark btn-block" onclick="addToCart()">Add to Cart</button>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7 mb-3">
+                    <div class="col-md-12 mb-3">
                             <div class="accordion mb-3" id="accordionExample">
                                 <div class="card">
                                     <div class="card-header d-flex justify-content-between align-items-center" id="headingOne">
@@ -347,6 +439,34 @@ header {
                             </div>
                     </div>
                 </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="p-details-contact-section">
+                            <div class="contact-box d-flex justify-content-between">
+                                <div class="box1">
+                                    <p><i class="fa fa-phone"></i> contact:</p>
+                                    <p><i class="fa fa-motorcycle"></i> Inside Dhaka:</p>
+                                    <p><i class="fa fa-truck"></i> Outside Dhaka:</p>
+                                    <p><i class="fa fa-money"></i> Cash on Delivery:</p>
+                                    <p><i class="fa fa-refresh"></i> Refund Rules:</p>
+                                </div>
+                                <div class="box1">
+                                    <a href="#"><p>01406667669</p></a>
+                                    <p>2-3 working days</p>
+                                    <p>3-4 working days</p>
+                                    <p>Available</p>
+                                    <p>Within 7 Days<a href="#"> View Policy</a></p>
+                                </div>
+                            </div>
+                            <div class="pay-method">
+                                <span>Payment</span>
+                                <img src="assets/images/payment/payment.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -359,7 +479,8 @@ header {
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer-title">
-                        <h3>Blucheez Outfitters</h3>
+                        <h3>Shopping Zone BD Outfitters</h3>
+                        <img class="footer-logo" src="assets/images/logo/main-logo.png" alt="">
                         <ul>
                             <li><i class="fa fa-map-marker"></i><a href="#">Address: demo office, 1212 Dhaka</a></li>
                             <li><i class="fa fa-envelope"></i><a href="#">Email: example@gmail.com</a></li>
@@ -371,7 +492,7 @@ header {
                     <div class="footer-title">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">Blucheez Club Card</a></li>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
                             <li><a href="#">Who We Are</a></li>
                             <li><a href="#">News feed</a></li>
                             <li><a href="#">Manifesto</a></li>
@@ -383,7 +504,7 @@ header {
                     <div class="footer-title">
                         <h3>Policies</h3>
                         <ul>
-                            <li><a href="#">Blucheez Club Card</a></li>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
                             <li><a href="#">Who We Are</a></li>
                             <li><a href="#">News feed</a></li>
                             <li><a href="#">Manifesto</a></li>
@@ -395,7 +516,7 @@ header {
                     <div class="footer-title">
                         <h3>Policies</h3>
                         <ul>
-                            <li><a href="#">Blucheez Club Card</a></li>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
                             <li><a href="#">Who We Are</a></li>
                             <li><a href="#">News feed</a></li>
                             <li><a href="#">Manifesto</a></li>
@@ -429,10 +550,23 @@ header {
     <!-- Owl-carosul js file cdn link -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/owl-extra-code.js"></script>
-
     <script src="assets/js/simple-lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevateZoom.min.js"></script>
-
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+    <script>
+        //image zoom js when mouseover on image
+        var options1 = {
+            width: 400,
+            zoomWidth: 500,
+            offset: {vertical: 0, horizontal: 10}
+        };
+        
+        // If the width and height of the image are not known or to adjust the image to the container of it
+        var options2 = {
+            fillContainer: true,
+            offset: {vertical: 0, horizontal: 10}
+        };
+        new ImageZoom(document.getElementById("img-zoom"), options2);
+        </script>
     <script>
         $(document).ready(function() {
             /*mobile menu*/
@@ -496,7 +630,17 @@ header {
 });
 
     </script>
-
+<script>
+    //When scroll on window
+    window.addEventListener('scroll', function() {
+const header = document.getElementById('header');
+if (window.scrollY > 50) {
+header.classList.add('scrolled');
+} else {
+header.classList.remove('scrolled');
+}
+});
+</script>
 </body>
 
 </html>

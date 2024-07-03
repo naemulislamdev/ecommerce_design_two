@@ -42,5 +42,26 @@ $('.c-review-slider').owlCarousel({
         }
     }
 });
+//header miniSlider Slider
+$('.p-details-sub-img').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 3
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
 
 
