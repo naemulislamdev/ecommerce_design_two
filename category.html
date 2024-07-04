@@ -4,83 +4,105 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ecommerce</title>
+    <title>Shopping Zone BD</title>
     <link rel="shortcut icon" href="assets/images/logo/favicon-32x32.png" type="image/x-icon">
 
     <!-- Font Awesome cdn link -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!-- Owl-carosul css cdn link -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
 
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <!-- <link rel="stylesheet" href="{{ asset('defaults/toastr/toastr.min.css') }}"> -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap_v4.min.css">
     <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
     <link rel="stylesheet" href="assets/css/bs_customize.css">
     <link rel="stylesheet" href="assets/css/custome.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
+<style>
+    .menu-area > ul > li > a {
+    color: #1a1919;
+}
+.header-icon > a > .fa {
+    color: #1a1919;
+}
+</style>
 
 </head>
 
 <body>
  
     <!-- Start Header & Navigation Section -->
-
-    <header class="" data-wow-duration="1s">
+    <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-2"><a class="navbar-brand" href="index.html">Evercom</a></div>
+                <div class="col-md-2">
+                    <!-- <a class="navbar-brand" href="index.html">Shopping Zone BD</a> -->
+                    <a href="index.html">
+                        <img class="header-logo" src="assets/images/logo/main-logo.png" alt="">
+                    </a>
+                </div>
                 <div class="col-md-8">
                     <nav class="navbar">
+                   
                         <div class="menu-area">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="category.html">Category</a></li>
-                                <li class="dd-btn1"><a href="#!">Eid 24</i></a>
+                
+                                <li class="dd-btn1"><a href="#"> Categories <i class="fa fa-angle-down"></i></a>
+
                                     <div class="dropdown-menu1">
                                         <ul>
-                                            <li><a href=""></i> View all</a></li>
+            
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i> Hari Tools <i class="fa fa-angle-right float-right mt-1"></i></a>
+            
+                                                <div class="dropdown-menu2">
+                                                    <ul class="w-nav-list level_3">
+                                                        <li class="dd-btn3"><a href="#">Hair cutting<i class="fa fa-angle-right float-right mt-1"></i></a>
+                                                            <div class="dropdown-menu3">
+                                                                <ul class="w-nav-list level_3">
+                                                                    <li><a href="#">Child manue</a></li>
+                                                                </ul>
+                                                            </div> 
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i> Face Makup <i class="fa fa-angle-right float-right mt-1"></i></a>
+                                                <div class="dropdown-menu2">
+                                                    <ul>
+                                                        <li><a href="#">Makup one</a></li>
+                                                        <li><a href="#">Makup two</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Face & Body Care<i class="fa fa-angle-right float-right mt-1"></i></a>
+                                            </li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Lip Beauty<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Hari Care<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Clothing<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Eye Makeup<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Jewellery<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Ladies Bag<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Saree<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                            <li class="dd-btn2"><a href="#"><i class="fa fa-long-arrow-right"></i>Cosmetics<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+            
                                         </ul>
                                     </div>
+            
                                 </li>
-                                <li class="dd-btn1"><a href="#!">Summer 24</i></a>
-                                    <div class="dropdown-menu1">
-                                        <ul>
-                                            <li><a href=""></i> View all</a></li>
-                                        </ul>
-                                    </div>
+                                <li><a href="#!">Shop</i></a>
                                 </li>
-                                <li class="dd-btn1"><a href="#!">Sale</i></a>
-                                    <div class="dropdown-menu1">
-                                        <ul>
-                                            <li><a href=""></i> View all</a></li>
-                                        </ul>
-                                    </div>
+                                <li><a href="#!">Vendors</i></a>
                                 </li>
-                                <li class="dd-btn1"><a href="#!">Men</i></a>
-                                    <div class="dropdown-menu1">
-                                        <ul>
-                                            <li><a href=""></i> View all</a></li>
-                                        </ul>
-                                    </div>
+                                <li><a href="#!">Pages</i></a>
                                 </li>
-                                <li class="dd-btn1"><a href="#!">Women</i></a>
-                                    <div class="dropdown-menu1">
-                                        <ul>
-                                            <li><a href=""></i> View all</a></li>
-                                        </ul>
-                                    </div>
+                                <li><a href="#!">Blog</i></a>
                                 </li>
-                                <li class="dd-btn1"><a href="#!">Accessories</i></a>
-                                    <div class="dropdown-menu1">
-                                        <ul>
-                                            <li><a href=""></i> View all</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li><a href="#!">Contact</i></a></li>
                             </ul>
                         </div>
               
@@ -98,15 +120,14 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </header>
     <!--end header-->
     <!--start mobile menu-->
     <div class="mobile-menu">
         <div class="mm-logo" style="background: #fff; padding: 11px 18px;">
-            <a href="#">
-                <img style="width: 55px;" src="" alt="logo">
+            <a href="index.html">
+                <img style="width:220px;" src="assets/images/logo/main-logo.png" alt="">
             </a>
             <div class="mm-cross-icon">
                 <i class="fa fa-times mm-ci"></i>
@@ -116,39 +137,81 @@
             <div class="accordion" id="accordionExample">
                 <div class="menu-box">
                     <div class="menu-link">
-                        <a href="#"><i class="fa fa-home mr-2"></i> হোম</a>
+                        <a href="index.html"><i class="fa fa-ptab3 mr-2"></i> Home</a>
                     </div>
                 </div>
                 <div class="menu-box">
-                    <div class="menu-link" id="headingFour">
-                        <a href="#" class="mmenu-btn" type="button" data-toggle="collapse"
-                            data-target="#collapseFour"> প্রতিষ্ঠানের ইতিহাস</a>
+                    <div class="menu-link" id="headingOne">
+                        <a class="mmenu-btn menu-link-active" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">Categories<i class="fa fa-plus"></i></a>
                     </div>
+                    <div id="collapseOne" class="menu-body collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li class="mega-dd-btn-2">
+                                    <a data-toggle="collapse" href="#category1" role="button" aria-expanded="false" aria-controls="category1" class="collapsed">Face & Body Care <i class="fa fa-angle-down float-right mt-1"></i></a>
+                                    <div class="collapse" id="category1">
+                                        <div class="card card-body scroll-div-dist">
+                                            <ul class="mega-item">
+                                                <li class="mega-dd-btn-2">
+                                                    <a data-toggle="collapse" href="#subCategory1" role="button" aria-expanded="false" aria-controls="subCategory1" class="collapsed">Face & Body Care <i class="fa fa-angle-down float-right mt-1"></i></a>
+                                                    <div class="collapse" id="subCategory1">
+                                                        <div class="card card-body scroll-div-dist">
+                                                            <ul class="mega-item">
+                                                                <li><a href="#">Face Makeup</a> 
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
     
+                                <li class="mega-dd-btn-2">
+                                    <a data-toggle="collapse" href="#subCategory2" role="button" aria-expanded="false" aria-controls="subCategory2" class="collapsed">Hari Tools<i class="fa fa-angle-down float-right mt-1"></i></a>
+                                    <div class="collapse" id="subCategory2">
+                                        <div class="card card-body scroll-div-dist">
+                                            <ul class="mega-item">
+                                                <li><a href="#">Hari catting</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                               
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Lip Beauty<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Hari Care<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Clothing<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Eye Makeup<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Jewellery<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Ladies Bag<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Saree<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Cosmetics<i class="fa fa-angle-right float-right mt-1"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <div class="menu-box">
+                    <div class="menu-link">
+                        <a href="#"><i class="fa fa-ptab3 mr-2"></i> Shop</a>
+                    </div>
+                </div>
+               
                 <div class="menu-box">
                     <div class="menu-link" id="headingFive">
                         <a class="mmenu-btn" type="button" data-toggle="collapse"
-                            data-target="#collapseFive">গ্যালারি<i class="fa fa-plus"></i></a>
+                            data-target="#collapseFive">Vendor<i class="fa fa-plus"></i></a>
                     </div>
                     <div id="collapseFive" class="collapse menu-body" aria-labelledby="headingFive"
                         data-parent="#accordionExample">
                         <div class="card-body">
                             <ul>
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i> ফটো
-                                        গ্যালারি</a></li>
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i> ভিডিও
-                                        গ্যালারি </a></li>
-    
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Login</a></li>
+                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Register </a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <style>
-                    .scroll-div-dist {
-                        background: #ececec !important;
-                    }
-                </style>
             </div>
         </div>
     </div>
@@ -214,250 +277,398 @@
         </div>
       </div>
     <!------End shopping cart canva-->
-    <!------start  header main slider-->
-    <section class="slider-section">
-        <div class="mainslider owl-carousel owl-theme">
-            <div class="item">
-                <div class="image-box">
-                    <img src="assets/images/slider/slider-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="image-box">
-                    <img src="assets/images/slider/slider-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="image-box">
-                    <img src="assets/images/slider/slider-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="image-box">
-                    <img src="assets/images/slider/slider-4.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------start  header mini slider-->
-    <!------start  header mini slider-->
-    <section class="mini-slider-text">
-        <div class="miniSlider owl-carousel owl-theme">
-            <div class="item">
-                <div class="miniSlider-text-box">
-                    <h3>Free nationwide shipping on orders over the amount 1000 tk.</h3>
-                </div>
-            </div>
-            <div class="item">
-                <div class="miniSlider-text-box">
-                    <h3>Free nationwide shipping on orders over the amount 1000 tk.</h3>
-                </div>
-            </div>
-            <div class="item">
-                <div class="miniSlider-text-box">
-                    <h3>Free nationwide shipping on orders over the amount 1000 tk.</h3>
-                </div>
-            </div>
-            <div class="item">
-                <div class="miniSlider-text-box">
-                    <h3>Free nationwide shipping on orders over the amount 1000 tk.</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------end mini slider-->
-    <!------Start find product main search section----->
-    <section class="product-search-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 mx-auto">
-                    <div class="product-search-area">
-                        <h2>Find the good out there.</h2>
-                        <div class="product-search-box">
-                            <div class="input-group mb-3">
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn"><i class="fa fa-search"></i></button>
-                                  </div>
-                                <input type="text" class="form-control" placeholder="Search your product" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------End find product main search section----->
     <!------Start Product section----->
     <section class="py-3">
         <div class="container">
-            <div class="row mb-3">
-                <div class="col">
-                    <div class="heading-title">
-                        <h3><span>WHAT'S NEW ?</span></h3>
+            <div class="d-flex justify-content-between mb-3">
+                <div class="filter-box">
+                    <a data-bs-toggle="offcanvas" href="#productFilter" role="button" aria-controls="productFilter"><i class="fa fa-filter"></i> Filter</a>
+                      <!------shopping cart canva-->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="productFilter" aria-labelledby="offcanvaProductFilterCard">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvaProductFilterCard">FILTER</h5>
+                        <i class="fa fa-close offcanvasClose" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <div class="wrapper">
+                                        <div class="price-input">
+                                          <div class="field">
+                                            <span>Min</span>
+                                            <input type="number" class="input-min" value="2500">
+                                          </div>
+                                          <div class="separator">-</div>
+                                          <div class="field">
+                                            <span>Max</span>
+                                            <input type="number" class="input-max" value="7500">
+                                          </div>
+                                        </div>
+                                        <div class="slider">
+                                          <div class="progress"></div>
+                                        </div>
+                                        <div class="range-input">
+                                          <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                          <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                        </div>
+                                      </div> 
+                                </div>
+                                <div class="col-md-6 mb-3 mx-auto">
+                                    <a href="#" class="w-100 common-btn">Search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <!------End shopping cart canva-->
+                </div>
+                
+                <div class="select-box">
+                    <select class="form-control" name="filter">
+                        <option>Date, new to old</option>
+                        <option>Date, new to old</option>
+                        <option>Date, new to old</option>
+                        <option>Date, new to old</option>
+                    </select>
+                </div>
+            </div>
 
+            <div class="row mb-3">
+                <div class="col text-center">
+                    <div class="section-heading-title">
+                        <h3>Category Name</h3>
+                        <div class="heading-border"></div>
+                    </div>
+                    <div class="grid-controls">
+                        <button class="grid-btn" data-columns="6" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="4" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="3" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn" data-columns="2" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
+                    </div>
+                    <div class="grid-controls mobile-grid-controls">
+                        <button class="grid-btn grid-btn-mobile" data-columns="12" data-category="category1">
+                            <div class="grid-icon"></div>
+                        </button>
+                        <button class="grid-btn grid-btn-mobile" data-columns="6" data-category="category1">
+                            <div class="grid-icon"></div>
+                            <div class="grid-icon"></div>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-6">
+            <div class="row product-grid">
+                <!-- Your product columns go here -->
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
                     <div class="product-box">
                         <div class="product-image2">
-                            <a href="#">
-                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/1.jpg">
                                 <img class="pic-2" src="assets/images/product-img/img2.jpg">
                             </a>
                             <ul class="social">
-                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
-                            <a class="add-to-cart" href="">Add to cart</a>
+                            <a class="add-to-cart" href="">Buy Now</a>
                         </div>
                         <div class="product-content">
-                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
-                            <span class="price">TK: 599.99</span>
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
                     <div class="product-box">
                         <div class="product-image2">
-                            <a href="#">
-                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/2.jpg">
                                 <img class="pic-2" src="assets/images/product-img/img2.jpg">
                             </a>
                             <ul class="social">
-                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
-                            <a class="add-to-cart" href="">Add to cart</a>
+                            <a class="add-to-cart" href="">Buy Now</a>
                         </div>
                         <div class="product-content">
-                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
-                            <span class="price">TK: 599.99</span>
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
                     <div class="product-box">
                         <div class="product-image2">
-                            <a href="#">
-                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/3.jpg">
                                 <img class="pic-2" src="assets/images/product-img/img2.jpg">
                             </a>
                             <ul class="social">
-                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
-                            <a class="add-to-cart" href="">Add to cart</a>
+                            <a class="add-to-cart" href="">Buy Now</a>
                         </div>
                         <div class="product-content">
-                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
-                            <span class="price">TK: 599.99</span>
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
                     <div class="product-box">
                         <div class="product-image2">
-                            <a href="#">
-                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/4.jpg">
                                 <img class="pic-2" src="assets/images/product-img/img2.jpg">
                             </a>
                             <ul class="social">
-                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
-                            <a class="add-to-cart" href="">Add to cart</a>
+                            <a class="add-to-cart" href="">Buy Now</a>
                         </div>
                         <div class="product-content">
-                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
-                            <span class="price">TK: 599.99</span>
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
                     <div class="product-box">
                         <div class="product-image2">
-                            <a href="#">
-                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/5.jpg">
                                 <img class="pic-2" src="assets/images/product-img/img2.jpg">
                             </a>
                             <ul class="social">
-                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
-                            <a class="add-to-cart" href="">Add to cart</a>
+                            <a class="add-to-cart" href="">Buy Now</a>
                         </div>
                         <div class="product-content">
-                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
-                            <span class="price">TK: 599.99</span>
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
                     <div class="product-box">
                         <div class="product-image2">
-                            <a href="#">
-                                <img class="pic-1" src="assets/images/product-img/img1.jpg">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/6.jpg">
                                 <img class="pic-2" src="assets/images/product-img/img2.jpg">
                             </a>
                             <ul class="social">
-                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
-                            <a class="add-to-cart" href="">Add to cart</a>
+                            <a class="add-to-cart" href="">Buy Now</a>
                         </div>
                         <div class="product-content">
-                            <h3 class="title"><a href="#">Women's Designer Top</a></h3>
-                            <span class="price">TK: 599.99</span>
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/7.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Buy Now</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 product-column" data-category="category1">
+                    <div class="product-box">
+                        <div class="product-image2">
+                            <div class="discount-box float-end">
+                                <span>50%</span>
+                            </div>
+                            <a href="product_description.html">
+                                <img class="pic-1" src="assets/images/product-img/8.jpg">
+                                <img class="pic-2" src="assets/images/product-img/img2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="product_description.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <a class="add-to-cart" href="">Buy Now</a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="product_description.html">Women's Designer Top</a></h3>
+                           <div class="price d-flex justify-content-center align-content-center">
+                            <span class="mr-2">৳ 599.99</span>
+                            <del>৳ 699.99</del>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="big-banner">
+                        <img src="assets/images/product-banner/main-banner3.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!------Start Product banner section----->
-     <section class="product-banner-section">
+
+    <!-- Start Newslater Section -->
+     <section class="newslater-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="product-banner-box">
-                        <img src="assets/images/product-banner/product-banner1.webp" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 align-self-center">
-                    <div class="p-banner-content">
-                        <h4>Ecommerce</h4>
-                        <p>Immerse yourself in the luxury of timeless allure with our carefully crafted Jamdani sarees. Each piece is a masterpiece, radiating elegance, tradition, and exquisite artistry. Elevate your style on extraordinary occasions with these opulent creations.</p>
-                        <div class="p-banner-btn"><a href="#">Try Jamdani Saree</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-     <section class="product-banner-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 align-self-center">
-                    <div class="p-banner-content">
-                        <h4>FESTIVE GLAM</h4>
-                        <p>Sparkle in Festive Splendor</p>
-                        <div class="p-banner-btn d-flex">
-                            <a href="#" class="mr-2">For Her</a>
-                            <a href="#">For Him</a>
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="newslater-text">
+                                <h4>SALE 20% OFF ALL STORE</h4>
+                                <h2>Subscribe our Newsletter</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="newslater-input">
+                                    <div class="input-group mb-3 w-100">
+                                        <input type="text" class="form-control" placeholder="Enter email">
+                                        <div class="input-group-append">
+                                          <button type="submit" class="btn btn-dark" id="basic-addon2">Subscribe</button>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="product-banner-box">
-                        <img src="assets/images/product-banner/product-banner1.webp" alt="">
+            </div>
+        </div>
+     </section>
+    <!-- Start  Footer Section -->
+     <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Shopping Zone BD Outfitters</h3>
+                        <img class="footer-logo" src="assets/images/logo/main-logo.png" alt="">
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i><a href="#">Address: demo office, 1212 Dhaka</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="#">Email: example@gmail.com</a></li>
+                            <li><i class="fa fa-phone"></i><a href="#">Phone:01587658765</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">News feed</a></li>
+                            <li><a href="#">Manifesto</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Policies</h3>
+                        <ul>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">News feed</a></li>
+                            <li><a href="#">Manifesto</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-title">
+                        <h3>Policies</h3>
+                        <ul>
+                            <li><a href="#">Shopping Zone BD Club Card</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">News feed</a></li>
+                            <li><a href="#">Manifesto</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-     </section>
-
+     </footer>
     <!-- Start  Copyright Section -->
     <section class="copyright-section">
         <div class="container">
@@ -481,8 +692,9 @@
     <!-- Owl-carosul js file cdn link -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/owl-extra-code.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/simple-lightbox.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -517,6 +729,97 @@
             });
         });
     </script>
+      <script>
+        new WOW().init();
+        </script>
+        <script>
+            //Grid view system on product
+            $(document).ready(function() {
+                $('.grid-btn').on('click', function() {
+                    var columns = $(this).data('columns');
+                    var category = $(this).data('category');
+                    // console.log(columns);
+                    $('.product-column[data-category="' + category + '"]')
+                        .removeClass('col-md-2 col-md-3 col-md-4 col-md-5 col-md-6')
+                        .addClass('col-md-' + columns);
+
+                    $('.grid-btn[data-category="' + category + '"]').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+        <script>
+            //Grid view system on product in mobile responsive
+            $(document).ready(function() {
+                $('.grid-btn-mobile').on('click', function() {
+                    var columns = $(this).data('columns');
+                    var category = $(this).data('category');
+                    // console.log(columns);
+                    $('.product-column[data-category="' + category + '"]')
+                        .removeClass('col-md-2 col-md-3 col-md-4 col-md-5 col-md-6 col-sm-12 col-sm-6')
+                        .addClass('col-sm-' + columns);
+
+                    $('.grid-btn-mobile[data-category="' + category + '"]').removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+        <script>
+            //When scroll on window
+            window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+        </script>
+        <script>
+            // Product price filter input in min and max
+            const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".price-input input"),
+  range = document.querySelector(".slider .progress");
+let priceGap = 1000;
+
+priceInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minPrice = parseInt(priceInput[0].value),
+      maxPrice = parseInt(priceInput[1].value);
+
+    if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+      if (e.target.className === "input-min") {
+        rangeInput[0].value = minPrice;
+        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+      } else {
+        rangeInput[1].value = maxPrice;
+        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+      }
+    }
+  });
+});
+
+rangeInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minVal = parseInt(rangeInput[0].value),
+      maxVal = parseInt(rangeInput[1].value);
+
+    if (maxVal - minVal < priceGap) {
+      if (e.target.className === "range-min") {
+        rangeInput[0].value = maxVal - priceGap;
+      } else {
+        rangeInput[1].value = minVal + priceGap;
+      }
+    } else {
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
+        </script>
+        
 </body>
 
 </html>
